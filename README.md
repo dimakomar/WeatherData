@@ -8,7 +8,7 @@ Assuming you have a [Cocoapods](https://cocoapods.org) installed
 ```bash
  pod install
 ```
-This app is using middleware from [this](https://github.com/dimakomar/weather_data_middleware) repo
+## This app is using middleware from [this](https://github.com/dimakomar/weather_data_middleware) repo
 
 ## TODOs
 
