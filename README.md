@@ -1,5 +1,6 @@
-## IDE
- Xcode 9.2 beta (9C34b)
+## Made with
+ * Xcode 9.2 beta (9C34b)
+ * Swift 4
  
 ## Installation
 
