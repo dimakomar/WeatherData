@@ -20,7 +20,6 @@ class TestNetworkManager: NetworkService {
     private(set) var requests = [NetworkRequest]()
     
     func doGet(request: NetworkRequest, completionHandler: @escaping (NetworkResponse) -> Void) throws {
-        //        print("doGet")
         requests.append(request)
         let resp = responses[request] ?? self.response
         if let resp = resp {

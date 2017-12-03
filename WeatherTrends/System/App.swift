@@ -8,7 +8,7 @@
 
 import Foundation
 
-class App {
+final class App {
     fileprivate static var services: [String: Service] = [:]
     
     class func add(_ service: Service, named name: String) {

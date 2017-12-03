@@ -9,7 +9,7 @@
 import UIKit
 import JBChartView
 
-class ChartListTableViewCell: UITableViewCell {
+final class ChartListTableViewCell: UITableViewCell {
     var contentViewController: UIViewController!
 
     func addViewController(toParentViewController parentViewController: UIViewController, values: [MonthWithProperties], chartType: ChartType) {

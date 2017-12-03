@@ -21,16 +21,19 @@ struct DataTypesEventHandler {
 }
 
 
-fileprivate extension DataTypesEventHandler {
-    
+private extension DataTypesEventHandler {
     func handle(result:Result<[MonthWithProperties], CAError>) {
         switch result {
         case .success(let monthList):
             DispatchQueue.main.async {
                 self.output.set(data: monthList)
+                self.output.hideActivityIndicator()
             }
-        case .failure(_):
-            //handle it in real project
+        case .failure(let error):
+            DispatchQueue.main.async {
+                self.output.showError(error: error)
+                self.output.hideActivityIndicator()
+            }
             break
         }
     }

@@ -43,6 +43,8 @@
 		9CAC0F7F1FCF2C2500805F09 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC0F7E1FCF2C2500805F09 /* NetworkManager.swift */; };
 		9CAC0F811FCFBC0700805F09 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC0F801FCFBC0700805F09 /* App.swift */; };
 		9CAC0F831FCFBC2D00805F09 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC0F821FCFBC2D00805F09 /* Service.swift */; };
+		9CE141D81FD43B7F00784347 /* SPRViewControllerActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE141D61FD43B7E00784347 /* SPRViewControllerActivityPresenter.swift */; };
+		9CE141D91FD43B7F00784347 /* FullScreenActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE141D71FD43B7F00784347 /* FullScreenActivityPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		9CAC0F7E1FCF2C2500805F09 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9CAC0F801FCFBC0700805F09 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9CAC0F821FCFBC2D00805F09 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9CE141D61FD43B7E00784347 /* SPRViewControllerActivityPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRViewControllerActivityPresenter.swift; sourceTree = "<group>"; };
+		9CE141D71FD43B7F00784347 /* FullScreenActivityPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenActivityPresenter.swift; sourceTree = "<group>"; };
 		9D7CA1D61A7D16D78487B49F /* Pods-WeatherTrends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTrends.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTrends/Pods-WeatherTrends.release.xcconfig"; sourceTree = "<group>"; };
 		9E128BE465C266594941E7D1 /* Pods_WeatherTrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTrends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +180,7 @@
 				9C12BA061FD0605700B881C4 /* Result.swift */,
 				9C12BA161FD1C8BD00B881C4 /* UIColor.swift */,
 				9C12B9FD1FD05DC700B881C4 /* Navigator.swift */,
+				9CE141DA1FD43C0500784347 /* Vendor */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -242,6 +247,15 @@
 				9C2EB3CB1FD3F78B0086DADF /* WeatherManagerTests.swift */,
 			);
 			path = WeatherTrendsTests;
+			sourceTree = "<group>";
+		};
+		9CE141DA1FD43C0500784347 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9CE141D71FD43B7F00784347 /* FullScreenActivityPresenter.swift */,
+				9CE141D61FD43B7E00784347 /* SPRViewControllerActivityPresenter.swift */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		9CE613041FD41C96000001C6 /* ModelObjects */ = {
@@ -485,6 +499,7 @@
 				9C12BA0B1FD173B300B881C4 /* ChartViewDataSource.swift in Sources */,
 				9C4F4F1E1FD025F400DBF100 /* Month.swift in Sources */,
 				9C12B9FA1FD05CDA00B881C4 /* ChartViewControllerFactory.swift in Sources */,
+				9CE141D81FD43B7F00784347 /* SPRViewControllerActivityPresenter.swift in Sources */,
 				9C12BA071FD0605700B881C4 /* Result.swift in Sources */,
 				9C12BA001FD05E4700B881C4 /* DataTypesNavigator.swift in Sources */,
 				9C12BA051FD05F5200B881C4 /* DataTypesUseCase.swift in Sources */,
@@ -492,6 +507,7 @@
 				9CAC0F5D1FCF28EA00805F09 /* AppDelegate.swift in Sources */,
 				9CAC0F811FCFBC0700805F09 /* App.swift in Sources */,
 				9CAC0F7D1FCF2AE000805F09 /* NetworkService.swift in Sources */,
+				9CE141D91FD43B7F00784347 /* FullScreenActivityPresenter.swift in Sources */,
 				9CAC0F831FCFBC2D00805F09 /* Service.swift in Sources */,
 				9C12B9F81FD05BC200B881C4 /* DataTypesTableViewController.swift in Sources */,
 				9C12BA131FD1834C00B881C4 /* ChartListFacroty.swift in Sources */,

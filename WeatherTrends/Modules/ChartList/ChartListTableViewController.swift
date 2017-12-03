@@ -14,29 +14,33 @@ enum ChartListCell {
     static let heightForRow: CGFloat = 200.0
 }
 
-class ChartListTableViewController: UITableViewController {
+final class ChartListTableViewController: UITableViewController {
     var monthsList: [MonthWithProperties]!
-    var categiries = [ChartType.tMax, ChartType.tMin]
+    private var categiries = [ChartType.tMax, ChartType.tMin]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupTableView()
+    }
+}
+
+private extension ChartListTableViewController {
+    func setupTableView() {
         tableView.register(ChartListTableViewCell.self, forCellReuseIdentifier: ChartListCell.reuseId)
         tableView.allowsSelection = false
+        navigationItem.title = String(describing: monthsList.first?.year ?? 0)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.title = String(describing: monthsList.first?.year ?? 0)
-    }
+}
 
+extension ChartListTableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return ChartListCell.numberOfSections
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categiries.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ChartListCell.reuseId, for: indexPath) as! ChartListTableViewCell
         if cell.contentViewController == nil {
@@ -44,7 +48,7 @@ class ChartListTableViewController: UITableViewController {
         }
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return ChartListCell.heightForRow
     }

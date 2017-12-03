@@ -11,4 +11,5 @@ import Foundation
 protocol DataTypesUseCase: UITableViewDelegate {
     func hideActivityIndicator()
     func set(data: [MonthWithProperties])
+    func showError(error: CAError)
 }

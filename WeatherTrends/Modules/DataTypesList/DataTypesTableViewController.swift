@@ -13,40 +13,34 @@ enum DataTypesList {
     static let reuseId = "DataTypesListCell"
 }
 
-class DataTypesTableViewController: UITableViewController, DataTypesUseCase {
-     var cellNames = [Int]()
-    
-    func hideActivityIndicator() {
-        print("hide")
-    }
-    
-    func set(data: [MonthWithProperties]) {
-        
-        monthList = data
-        print(data)
-        let years = data.map() {$0.year}
-        cellNames =  Array(Set(years)).sorted()
-        tableView.reloadData()
-    }
-    
+final class DataTypesTableViewController: UITableViewController, DataTypesUseCase {
     var output: DataTypesEventHandler!
-    var monthList: [MonthWithProperties]!
+    private var cellNames = [Int]()
+    private var monthList: [MonthWithProperties]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.fetchWeatherData()
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        navigationController?.navigationBar.topItem?.title = DataTypesList.navigationBarTitleText
+        self.setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tableView.reloadData()
-        navigationController?.navigationBar.prefersLargeTitles = true
-
     }
-    
+}
+
+private extension DataTypesTableViewController {
+    func setupTableView() {
+        FullScreenActivityPresenter.shared.showActivityIndicator(forViewController: self)
+        output.fetchWeatherData()
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        navigationController?.navigationBar.topItem?.title = DataTypesList.navigationBarTitleText
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+}
+
+extension DataTypesTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellNames.count
     }
@@ -60,5 +54,23 @@ class DataTypesTableViewController: UITableViewController, DataTypesUseCase {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         output.navigator.pushChart(values: monthList, year: cellNames[indexPath.row])
+    }
+}
+
+extension DataTypesTableViewController {
+    func hideActivityIndicator() {
+        FullScreenActivityPresenter.shared.hideActivityIndicator(forViewController: self)
+    }
+    
+    func set(data: [MonthWithProperties]) {
+        monthList = data
+        let years = data.map() {$0.year}
+        cellNames =  Array(Set(years)).sorted()
+        tableView.reloadData()
+    }
+    
+    func showError(error: CAError) {
+        let alertViewController = UIAlertController(title: error.localizedDescription, message: nil, preferredStyle: .alert)
+        alertViewController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     }
 }

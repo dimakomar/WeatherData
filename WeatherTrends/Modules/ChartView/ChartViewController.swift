@@ -11,20 +11,21 @@ import JBChartView
 
 enum ChartView {
     static let mainColor = UIColor(netHex: 0x006fff)
+    static let selectedColor = UIColor(netHex: 0x4598ff)
     static let fontSize: CGFloat = 24
     static let minTemperatureText = "Min Temperature"
     static let maxTemperatureText = "Max Temperature"
     static let insert: CGFloat = 15.0
 }
 
-class ChartViewController: UIViewController {
-    var dataSource: ChartViewDataSource!
-    let chartView: JBBarChartView = {
+final class ChartViewController: UIViewController {
+    
+    private let chartView: JBBarChartView = {
         let ret = JBBarChartView(frame: CGRect.zero)
         return ret
     }()
     
-    let headerLabel: UILabel = {
+    private let headerLabel: UILabel = {
         let ret = UILabel(frame: CGRect.zero)
         ret.adjustsFontSizeToFitWidth = true
         ret.textColor = ChartView.mainColor
@@ -32,7 +33,7 @@ class ChartViewController: UIViewController {
         return ret
     }()
     
-    let valueLabel: UILabel = {
+    private let valueLabel: UILabel = {
         let ret = UILabel(frame: CGRect.zero)
         ret.adjustsFontSizeToFitWidth = true
         ret.textColor = ChartView.mainColor
@@ -43,15 +44,23 @@ class ChartViewController: UIViewController {
     var monthsList: [MonthWithProperties]!
     var contentView: UIView!
     var chartType: ChartType!
-    var chartData: [CGFloat]!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(self.view)
-    }
+    private var chartData: [CGFloat]!
+    private var dataSource: ChartViewDataSource!
     
     override func loadView() {
         super.loadView()
+        self.setupView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadValues(values: monthsList)
+        chartView.state = .expanded
+    }
+}
+
+private extension ChartViewController{
+    func setupView() {
         headerLabel.frame = CGRect(x: ChartView.insert, y: 0, width: self.contentView.frame.width - ChartView.insert * 2, height: self.contentView.frame.height / 8)
         valueLabel.frame = CGRect(x: ChartView.insert, y: headerLabel.frame.height, width: self.contentView.frame.width - ChartView.insert * 2, height: self.contentView.frame.height / 8)
         chartView.frame = CGRect(x: ChartView.insert, y: valueLabel.frame.maxY, width: self.contentView.frame.width - ChartView.insert * 2, height: self.contentView.frame.height - self.contentView.frame.height / 4)
@@ -63,30 +72,19 @@ class ChartViewController: UIViewController {
         view.addSubview(valueLabel)
         view.addSubview(chartView)
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        loadValues(values: monthsList)
-        chartView.state = .expanded
-    }
-}
-
-private extension ChartViewController{
+    
     func loadValues(values: [MonthWithProperties]) {
+        var valuesArray = [CGFloat]()
         switch chartType! {
         case .tMax:
-            let newArr = values.map() {$0.tMax.value}
-            chartData = newArr
-            chartView.maximumValue = CGFloat(getMaxValue(values: newArr))
-            chartView.minimumValue = CGFloat(getMinValue(values: newArr))
-            headerLabel.text = ChartView.maxTemperatureText
+            valuesArray = values.map() { $0.tMax.value }
         default:
-            let newArr = values.map() {$0.tMin.value}
-            chartData = newArr
-            chartView.maximumValue = CGFloat(getMaxValue(values: newArr))
-            chartView.minimumValue = CGFloat(getMinValue(values: newArr))
-            headerLabel.text = ChartView.minTemperatureText
+            valuesArray = values.map() { $0.tMin.value }
         }
+        chartData = valuesArray
+        chartView.maximumValue = CGFloat(getMaxValue(values: valuesArray))
+        chartView.minimumValue = CGFloat(getMinValue(values: valuesArray))
+        headerLabel.text = ChartView.minTemperatureText
         self.chartView.reloadData()
     }
     
@@ -131,11 +129,11 @@ extension ChartViewController: JBBarChartViewDelegate {
             isEstimated = monthsList[Int(index)].tMin.isEstimated
         }
         
-        return isEstimated ? .red : UIColor(netHex: 0x006fff)
+        return isEstimated ? .red : ChartView.mainColor
     }
     
     func barSelectionColor(for barChartView: JBBarChartView!) -> UIColor! {
-        return UIColor(netHex: 0x00fff6)
+        return ChartView.selectedColor
     }
     
     func barChartView(_ barChartView: JBBarChartView!, didSelectBarAt index: UInt) {

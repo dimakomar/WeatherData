@@ -9,7 +9,7 @@
 import Foundation
 import JBChartView
 
-class ChartViewDataSource: NSObject, JBBarChartViewDataSource {
+final class ChartViewDataSource: NSObject, JBBarChartViewDataSource {
     private var monthsList = [MonthWithProperties]()
     
     init(monthsList: [MonthWithProperties]) {
