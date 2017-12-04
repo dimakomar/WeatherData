@@ -34,7 +34,7 @@ class WeatherManagerTests: XCTestCase {
         let monthes = MonthList(months: [month])
         let encodedObj =  try! monthes.encode()
        
-        self.network.response = NetworkResponse(responseData: .element(encodedObj), responseError: nil, communicationError: nil, statusCode: 200)
+        self.network.response = NetworkResponse(responseData: .responseData(encodedObj), responseError: nil, communicationError: nil, statusCode: 200)
         service.getWeatherData() {
             result in
             if case .failure(_) = result {
@@ -47,7 +47,7 @@ class WeatherManagerTests: XCTestCase {
         guard let service = self.weatherService else {
             return
         }
-        self.network.response = NetworkResponse(responseData: .dictionary(["Horse": [""]]), responseError: nil, communicationError: NSError(domain: "horse", code: 9), statusCode: 200)
+        self.network.response = NetworkResponse(responseData: .nilData, responseError: nil, communicationError: NSError(domain: "horse", code: 9), statusCode: 200)
         service.getWeatherData() {
             result in
             if case .success(_) = result {
@@ -60,7 +60,7 @@ class WeatherManagerTests: XCTestCase {
         guard let service = self.weatherService else {
             return
         }
-        self.network.response = NetworkResponse(responseData: .dictionary(["Horse": [""]]), responseError: nil, communicationError: NSError(domain: "horse", code: 9), statusCode: 501)
+        self.network.response = NetworkResponse(responseData: .nilData, responseError: nil, communicationError: NSError(domain: "horse", code: 9), statusCode: 501)
         service.getWeatherData() {
             result in
             if case .success(_) = result {

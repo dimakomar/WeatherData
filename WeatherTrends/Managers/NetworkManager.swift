@@ -8,12 +8,9 @@
 
 import Foundation
 
-enum JSONWrapper {
-    case notSet
+enum DataWrapper {
     case nilData
-    case dictionary([String: Any])
-    case array([Any])
-    case element(Any)
+    case responseData(Any)
 }
 
 struct NetworkRequest {
@@ -44,7 +41,7 @@ struct NetworkResponseError: LocalizedError {
 }
 
 struct NetworkResponse {
-    let responseData: JSONWrapper
+    let responseData: DataWrapper
     let responseError: NetworkResponseError?
     let communicationError: Error?
     let statusCode: Int
@@ -74,10 +71,10 @@ class NetworkManager: NetworkService {
         task = session.dataTask(with: urlRequest) {
             data, response, error in
             guard let response = response as? HTTPURLResponse, let data = data else {
-                completionHandler(NetworkResponse(responseData: JSONWrapper.nilData, responseError: nil, communicationError: error, statusCode: 500))
+                completionHandler(NetworkResponse(responseData: DataWrapper.nilData, responseError: nil, communicationError: error, statusCode: 500))
                 return
             }
-            completionHandler(NetworkResponse(responseData: JSONWrapper.element(data), responseError: nil, communicationError: error, statusCode: response.statusCode))
+            completionHandler(NetworkResponse(responseData: DataWrapper.responseData(data), responseError: nil, communicationError: error, statusCode: response.statusCode))
         }
         
         if let t = task {

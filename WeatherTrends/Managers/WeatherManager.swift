@@ -30,7 +30,7 @@ class WeatherManager: WeatherService {
                 
                 let responseData = response.responseData
                 switch responseData {
-                case .element(let resData):
+                case .responseData(let resData):
                     let decoder = JSONDecoder()
                     let months = try! decoder.decode(MonthList.self, from: resData as! Data)
                     let convertedMonth = months.months.map() {
@@ -44,14 +44,8 @@ class WeatherManager: WeatherService {
                         return MonthWithProperties(year: month.year, month: month.year, tMax: maxTemp, tMin: minTemp, afDays: afDays, rainMm: rainMm, sunHours: sunHours)
                     }
                     completion(.success(convertedMonth))
-                case .notSet:
-                    completion(.failure(CAError.none))
                 case .nilData:
-                    completion(.failure(CAError.none))
-                case .dictionary(_):
-                    completion(.failure(CAError.none))
-                case .array(_):
-                    completion(.failure(CAError.none))
+                     completion(.failure(CAError.none))
                 }
             }
         } catch {
