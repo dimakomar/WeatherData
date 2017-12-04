@@ -11,6 +11,7 @@ import Foundation
 enum DataTypesList {
     static let navigationBarTitleText = "Years"
     static let reuseId = "DataTypesListCell"
+    static let errorHint = "You probably have to start local server from github repo"
 }
 
 final class DataTypesTableViewController: UITableViewController, DataTypesUseCase {
@@ -64,13 +65,14 @@ extension DataTypesTableViewController {
     
     func set(data: [MonthWithProperties]) {
         monthList = data
-        let years = data.map() {$0.year}
+        let years = data.map() { $0.year }
         cellNames =  Array(Set(years)).sorted()
         tableView.reloadData()
     }
     
     func showError(error: CAError) {
-        let alertViewController = UIAlertController(title: error.localizedDescription, message: nil, preferredStyle: .alert)
+        let alertViewController = UIAlertController(title: error.localizedDescription, message: DataTypesList.errorHint, preferredStyle: .alert)
         alertViewController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alertViewController, animated: true, completion: nil)
     }
 }

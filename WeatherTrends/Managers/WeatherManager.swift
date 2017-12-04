@@ -23,6 +23,11 @@ class WeatherManager: WeatherService {
         do {
             try App.network.doGet(request: req) {
                 response in
+                if let error = response.communicationError {
+                    completion(.failure(CAError.other(childError: error)))
+                    return
+                }
+                
                 let responseData = response.responseData
                 switch responseData {
                 case .element(let resData):

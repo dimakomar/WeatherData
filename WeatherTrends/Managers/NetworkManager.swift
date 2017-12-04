@@ -57,6 +57,8 @@ class NetworkManager: NetworkService {
     fileprivate let dataSession: URLSession = {
         let config = URLSessionConfiguration.default
         config.httpShouldUsePipelining = true
+        config.timeoutIntervalForRequest = 5
+        config.timeoutIntervalForResource = 60
         config.httpAdditionalHeaders = [
             "Content-Type": "application/json; charset=UTF-8",
             "Accept": "application/json",
@@ -71,8 +73,11 @@ class NetworkManager: NetworkService {
         let urlRequest = URLRequest(url: url)
         task = session.dataTask(with: urlRequest) {
             data, response, error in
-            guard let data = data else { return }
-            completionHandler(NetworkResponse(responseData: JSONWrapper.element(data), responseError: nil, communicationError: error, statusCode: 200))
+            guard let response = response as? HTTPURLResponse, let data = data else {
+                completionHandler(NetworkResponse(responseData: JSONWrapper.nilData, responseError: nil, communicationError: error, statusCode: 500))
+                return
+            }
+            completionHandler(NetworkResponse(responseData: JSONWrapper.element(data), responseError: nil, communicationError: error, statusCode: response.statusCode))
         }
         
         if let t = task {
