@@ -78,13 +78,15 @@ private extension ChartViewController{
         switch chartType! {
         case .tMax:
             valuesArray = values.map() { $0.tMax.value }
+            headerLabel.text = ChartView.maxTemperatureText
         default:
             valuesArray = values.map() { $0.tMin.value }
+            headerLabel.text = ChartView.minTemperatureText
         }
         chartData = valuesArray
         chartView.maximumValue = CGFloat(getMaxValue(values: valuesArray))
         chartView.minimumValue = CGFloat(getMinValue(values: valuesArray))
-        headerLabel.text = ChartView.minTemperatureText
+        
         self.chartView.reloadData()
     }
     

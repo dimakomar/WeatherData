@@ -24,25 +24,8 @@ struct NetworkRequest {
     }
 }
 
-struct NetworkResponseError: LocalizedError {
-    let code: Int
-    let localizedMessage: String
-    let developerMessage: String?
-    
-    func localizedDescription() -> String {
-        return localizedMessage
-    }
-    
-    init(code: Int, localizedMessage: String, developerMessage: String? = nil) {
-        self.code = code
-        self.localizedMessage = localizedMessage
-        self.developerMessage = developerMessage
-    }
-}
-
 struct NetworkResponse {
     let responseData: DataWrapper
-    let responseError: NetworkResponseError?
     let communicationError: Error?
     let statusCode: Int
 }
@@ -71,10 +54,10 @@ class NetworkManager: NetworkService {
         task = session.dataTask(with: urlRequest) {
             data, response, error in
             guard let response = response as? HTTPURLResponse, let data = data else {
-                completionHandler(NetworkResponse(responseData: DataWrapper.nilData, responseError: nil, communicationError: error, statusCode: 500))
+                completionHandler(NetworkResponse(responseData: DataWrapper.nilData, communicationError: error, statusCode: 500))
                 return
             }
-            completionHandler(NetworkResponse(responseData: DataWrapper.responseData(data), responseError: nil, communicationError: error, statusCode: response.statusCode))
+            completionHandler(NetworkResponse(responseData: DataWrapper.responseData(data), communicationError: error, statusCode: response.statusCode))
         }
         
         if let t = task {
