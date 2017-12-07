@@ -6,8 +6,6 @@
 //  Copyright © 2017 Dima Komar . All rights reserved.
 //
 
-import Foundation
-
 enum DataTypesList {
     static let navigationBarTitleText = "Years"
     static let reuseId = "DataTypesListCell"

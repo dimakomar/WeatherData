@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		139DF8B9AD013E4DE9C795B72D6B215A /* JBGradientBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F719D0345E30621EA16E0DE1C94FB30D /* JBGradientBarView.m */; };
+		2157E68D351AE5CA57E69C9A46B0B088 /* JBLineChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BEE126951922CEFCF2359F81E1D073 /* JBLineChartLine.m */; };
+		299881057FB2CA560B3112BA2557FA3D /* JBLineChartDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F37AD5080E9267F71E5A4BF3C92ECC9F /* JBLineChartDotsView.m */; };
+		2E38BFF8237A73E24D8EF5F168155719 /* JBChartView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA555C847F77131C20DB1ADAAEE6CA1 /* JBChartView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CA890E59175CCB854195F625542345 /* JBShapeLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F12AC78BECF5094C13E29597912F29F7 /* JBShapeLineLayer.m */; };
+		3A5F14CE9FE49261B7CE5DE1F390BECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3B059AE9D1BCDB673D012857263B9D4C /* JBBarChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D798E85B9CD05AA82E80D2CC9DE065 /* JBBarChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423FB12FD58688ED84997BF59F746989 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		426A42796485A71F96D24CCF1E859DF8 /* JBChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 231DD4BE21CB6338D806940785EA81F7 /* JBChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		445851C633A5424160C4EE15304459C8 /* JBLineChartLinesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DE8B538B37F52432CD46D0789831D8 /* JBLineChartLinesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F5ED8C9CD017711C8CAD6ACA4D93D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		51F96C9AB940B0632F0B8F5CCB837D6D /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AFA4BD684D9BB792594C3C410AA9C1 /* JBBarChartView.m */; };
+		5A2B0C434CCB0D1CD3F49DFF060D4936 /* JBLineChartLine.h in Headers */ = {isa = PBXBuildFile; fileRef = CF16E99F051C2D0D7D8F19461C55FB02 /* JBLineChartLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A86D83775F51E702C21210516163C74 /* JBLineChartDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 823460AC770FC133E0D6D78E738FBB94 /* JBLineChartDotView.m */; };
+		70604C26EAE06BC8D62E86764129F85E /* Pods-WeatherTrends-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 995ACD2684639300DCD9E8B15EBD4A8C /* Pods-WeatherTrends-dummy.m */; };
+		732E83D919E45F18F1838E1D69ED471C /* JBLineChartPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = BB99B2CE2F51DB3EFB0329532E3AC258 /* JBLineChartPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74CFE7B7EAC9CE681E9AD6116FA9BE65 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA25C2F035B23B803EDBB205A9141C9 /* JBLineChartView.m */; };
+		78120A3601A06D8A5EDFBFD585129753 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9210E77FE8944258651221D625EFCB /* JBChartView.m */; };
+		78B64E300A5FB52BF23B4A2C1F4455FF /* Pods-WeatherTrends-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F327D901498FA76A241D6AEFF3970468 /* Pods-WeatherTrends-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89456D1FFDB323E816213F9A5CF4089D /* JBGradientLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D496CC202C35048A5B438032ABB25FDF /* JBGradientLineLayer.m */; };
+		90EA1846E4E2AAAE9014B909556EF63F /* Pods-WeatherTrendsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0254A7440F9602BC7B0C6F4EE4CA07 /* Pods-WeatherTrendsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93F689EB0FCCC0E426D47A629D398CB9 /* JBGradientLineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 97EB3DCDCA5722AA1549D2856E1A2DDB /* JBGradientLineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98DF62F047B5ACAA65EC3C159798A155 /* JBShapeLineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF64B5C5FF5E0615F3C80854E58A782 /* JBShapeLineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991C4F2114B16DBDFF044E421EB150A3 /* Pods-WeatherTrendsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6AF17BE00D340C1FF2918DCE306C72 /* Pods-WeatherTrendsTests-dummy.m */; };
+		9F0779951A822EA5DF0E31817411D9F1 /* NSMutableArray+JBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6641DA239A17BC342D6B22CE7AB527 /* NSMutableArray+JBStack.m */; };
+		A10E78C5CE1F3930468BD336E1F31A4C /* NSMutableArray+JBStack.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA2D3A6B69848AD82CC6D29C975E69D /* NSMutableArray+JBStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A63CDF2F0879C1B64D5B7EFB3D8DAF92 /* JBChartView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B293C6B0AD7D04DC70CCE82790A4763F /* JBChartView-dummy.m */; };
+		B55C23EFBE330672CC51B262346C9A58 /* JBGradientBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BFB03F390760B19D7922088F374959 /* JBGradientBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5A6F1F3F0C84AE88F9F96AD83F0062C /* JBLineChartLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2D38175EB39B2A214A80B659894C8 /* JBLineChartLinesView.m */; };
+		CCA6BFF987DEE0C71CA6FFF87E82622C /* JBLineChartPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F621E183CA3220346B357D81A0038C6A /* JBLineChartPoint.m */; };
+		D8C12D3990AF99FDA491BFF4CC0B42C1 /* JBLineChartDotsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0813EE82590EA068D65FAC454DA9750A /* JBLineChartDotsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D969475FA12BC012A40CD8B6BC03874E /* JBLineChartDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F4366D89599131703CF8E9086FEC7B /* JBLineChartDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E573529DC067A1DC86AC31C40744CE05 /* JBLineChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B90CAF176EA3F7B9B58679F361F8BE /* JBLineChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D454104E1AD487E5BCC765FF101EE0F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A4752E1A78EE7604F2EEFBC36866BB3;
+			remoteInfo = JBChartView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E22A554495DDBCBC121BD0FCC5CD76 /* Pods-WeatherTrendsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherTrendsTests-frameworks.sh"; sourceTree = "<group>"; };
+		03BEE126951922CEFCF2359F81E1D073 /* JBLineChartLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartLine.m; path = Classes/Line/Models/JBLineChartLine.m; sourceTree = "<group>"; };
+		062D8DD4B9F4160D77712E0E196F5A36 /* Pods-WeatherTrends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherTrends.release.xcconfig"; sourceTree = "<group>"; };
+		0813EE82590EA068D65FAC454DA9750A /* JBLineChartDotsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartDotsView.h; path = Classes/Line/Views/JBLineChartDotsView.h; sourceTree = "<group>"; };
+		231DD4BE21CB6338D806940785EA81F7 /* JBChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBChartView.h; path = Classes/Base/JBChartView.h; sourceTree = "<group>"; };
+		23ED004F6ECD8BAE7B457E31D2032A74 /* Pods-WeatherTrendsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherTrendsTests-resources.sh"; sourceTree = "<group>"; };
+		2FF64B5C5FF5E0615F3C80854E58A782 /* JBShapeLineLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBShapeLineLayer.h; path = Classes/Line/Layers/JBShapeLineLayer.h; sourceTree = "<group>"; };
+		3C20D41F4F6BD44166F4681E7DA717F4 /* Pods_WeatherTrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherTrends.framework; path = "Pods-WeatherTrends.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9C7689A9F98DA160C650A709B664B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BFB03F390760B19D7922088F374959 /* JBGradientBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBGradientBarView.h; path = Classes/Bar/Views/JBGradientBarView.h; sourceTree = "<group>"; };
+		55DE8B538B37F52432CD46D0789831D8 /* JBLineChartLinesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartLinesView.h; path = Classes/Line/Views/JBLineChartLinesView.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68D798E85B9CD05AA82E80D2CC9DE065 /* JBBarChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBBarChartView.h; path = Classes/Bar/JBBarChartView.h; sourceTree = "<group>"; };
+		6ED2D38175EB39B2A214A80B659894C8 /* JBLineChartLinesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartLinesView.m; path = Classes/Line/Views/JBLineChartLinesView.m; sourceTree = "<group>"; };
+		730E5011C15432BAB347486B7ED8DA56 /* Pods-WeatherTrends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherTrends.debug.xcconfig"; sourceTree = "<group>"; };
+		7CE205CDC8A9FD327FF95CC9F25DB29A /* Pods-WeatherTrendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherTrendsTests.release.xcconfig"; sourceTree = "<group>"; };
+		820742AF6762AE0235E0F1A942E5FFA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823460AC770FC133E0D6D78E738FBB94 /* JBLineChartDotView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartDotView.m; path = Classes/Line/Views/JBLineChartDotView.m; sourceTree = "<group>"; };
+		824182A1F26E24CE7C63E0708A425D6C /* JBChartView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBChartView.xcconfig; sourceTree = "<group>"; };
+		8B9210E77FE8944258651221D625EFCB /* JBChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBChartView.m; path = Classes/Base/JBChartView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97EB3DCDCA5722AA1549D2856E1A2DDB /* JBGradientLineLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBGradientLineLayer.h; path = Classes/Line/Layers/JBGradientLineLayer.h; sourceTree = "<group>"; };
+		98F4366D89599131703CF8E9086FEC7B /* JBLineChartDotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartDotView.h; path = Classes/Line/Views/JBLineChartDotView.h; sourceTree = "<group>"; };
+		995ACD2684639300DCD9E8B15EBD4A8C /* Pods-WeatherTrends-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherTrends-dummy.m"; sourceTree = "<group>"; };
+		997F576503394FE5E91D079F9C1E93C6 /* Pods-WeatherTrendsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherTrendsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		99F41FFE77D9E854B7C156529155AF7D /* Pods-WeatherTrendsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WeatherTrendsTests.modulemap"; sourceTree = "<group>"; };
+		9A25D6E7F379A3C9219F9E34F6B01B22 /* Pods-WeatherTrendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherTrendsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8ECA41750880E1313A296F93D695140 /* Pods-WeatherTrends-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherTrends-resources.sh"; sourceTree = "<group>"; };
+		A8F5D9192D329BABF28329189EB2C5F0 /* JBChartView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JBChartView.modulemap; sourceTree = "<group>"; };
+		ABD774DED15080250BB27D9A8B6935AD /* Pods-WeatherTrendsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherTrendsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF8A170D2D94C2F40C083BEB50B58D72 /* Pods_WeatherTrendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherTrendsTests.framework; path = "Pods-WeatherTrendsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17CF8E8BE631B13EBD2BB69B602D1DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1AFA4BD684D9BB792594C3C410AA9C1 /* JBBarChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBBarChartView.m; path = Classes/Bar/JBBarChartView.m; sourceTree = "<group>"; };
+		B293C6B0AD7D04DC70CCE82790A4763F /* JBChartView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JBChartView-dummy.m"; sourceTree = "<group>"; };
+		BA6AF17BE00D340C1FF2918DCE306C72 /* Pods-WeatherTrendsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherTrendsTests-dummy.m"; sourceTree = "<group>"; };
+		BB99B2CE2F51DB3EFB0329532E3AC258 /* JBLineChartPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartPoint.h; path = Classes/Line/Models/JBLineChartPoint.h; sourceTree = "<group>"; };
+		BBA555C847F77131C20DB1ADAAEE6CA1 /* JBChartView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBChartView-umbrella.h"; sourceTree = "<group>"; };
+		BBC161407B1AA6B2E09D7C16EBC6547B /* JBChartView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBChartView-prefix.pch"; sourceTree = "<group>"; };
+		BC0254A7440F9602BC7B0C6F4EE4CA07 /* Pods-WeatherTrendsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherTrendsTests-umbrella.h"; sourceTree = "<group>"; };
+		BCA25C2F035B23B803EDBB205A9141C9 /* JBLineChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartView.m; path = Classes/Line/JBLineChartView.m; sourceTree = "<group>"; };
+		CF16E99F051C2D0D7D8F19461C55FB02 /* JBLineChartLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartLine.h; path = Classes/Line/Models/JBLineChartLine.h; sourceTree = "<group>"; };
+		CFE2B758B0EF9C62388D876D30913FE2 /* JBChartView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JBChartView.framework; path = JBChartView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B90CAF176EA3F7B9B58679F361F8BE /* JBLineChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JBLineChartView.h; path = Classes/Line/JBLineChartView.h; sourceTree = "<group>"; };
+		D1F96CC82B60A07D8BEE7F9A0FB20F5E /* Pods-WeatherTrends-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherTrends-frameworks.sh"; sourceTree = "<group>"; };
+		D496CC202C35048A5B438032ABB25FDF /* JBGradientLineLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBGradientLineLayer.m; path = Classes/Line/Layers/JBGradientLineLayer.m; sourceTree = "<group>"; };
+		E3F7CF3192CE205A38933F6639B7CE04 /* Pods-WeatherTrends.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WeatherTrends.modulemap"; sourceTree = "<group>"; };
+		EA6641DA239A17BC342D6B22CE7AB527 /* NSMutableArray+JBStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+JBStack.m"; path = "Classes/Additions/NSMutableArray+JBStack.m"; sourceTree = "<group>"; };
+		EBDD1D6495B59CC9168DC4670D6201A3 /* Pods-WeatherTrends-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherTrends-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EFA2D3A6B69848AD82CC6D29C975E69D /* NSMutableArray+JBStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+JBStack.h"; path = "Classes/Additions/NSMutableArray+JBStack.h"; sourceTree = "<group>"; };
+		F12AC78BECF5094C13E29597912F29F7 /* JBShapeLineLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBShapeLineLayer.m; path = Classes/Line/Layers/JBShapeLineLayer.m; sourceTree = "<group>"; };
+		F327D901498FA76A241D6AEFF3970468 /* Pods-WeatherTrends-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherTrends-umbrella.h"; sourceTree = "<group>"; };
+		F37AD5080E9267F71E5A4BF3C92ECC9F /* JBLineChartDotsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartDotsView.m; path = Classes/Line/Views/JBLineChartDotsView.m; sourceTree = "<group>"; };
+		F621E183CA3220346B357D81A0038C6A /* JBLineChartPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBLineChartPoint.m; path = Classes/Line/Models/JBLineChartPoint.m; sourceTree = "<group>"; };
+		F719D0345E30621EA16E0DE1C94FB30D /* JBGradientBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JBGradientBarView.m; path = Classes/Bar/Views/JBGradientBarView.m; sourceTree = "<group>"; };
+		F75F52CA03FC8665934450B09A6B58E2 /* Pods-WeatherTrends-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherTrends-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D51AF864A97ADEB5C337365547FE4B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F5ED8C9CD017711C8CAD6ACA4D93D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3124380E2BE7D6164303D8C31CF72B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423FB12FD58688ED84997BF59F746989 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FAEF5A53A8515020A1771D6BA62693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5F14CE9FE49261B7CE5DE1F390BECE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01791CEBC0DC3B6F0DEDDDCBD4698371 /* Pods-WeatherTrendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				820742AF6762AE0235E0F1A942E5FFA1 /* Info.plist */,
+				99F41FFE77D9E854B7C156529155AF7D /* Pods-WeatherTrendsTests.modulemap */,
+				ABD774DED15080250BB27D9A8B6935AD /* Pods-WeatherTrendsTests-acknowledgements.markdown */,
+				997F576503394FE5E91D079F9C1E93C6 /* Pods-WeatherTrendsTests-acknowledgements.plist */,
+				BA6AF17BE00D340C1FF2918DCE306C72 /* Pods-WeatherTrendsTests-dummy.m */,
+				02E22A554495DDBCBC121BD0FCC5CD76 /* Pods-WeatherTrendsTests-frameworks.sh */,
+				23ED004F6ECD8BAE7B457E31D2032A74 /* Pods-WeatherTrendsTests-resources.sh */,
+				BC0254A7440F9602BC7B0C6F4EE4CA07 /* Pods-WeatherTrendsTests-umbrella.h */,
+				9A25D6E7F379A3C9219F9E34F6B01B22 /* Pods-WeatherTrendsTests.debug.xcconfig */,
+				7CE205CDC8A9FD327FF95CC9F25DB29A /* Pods-WeatherTrendsTests.release.xcconfig */,
+			);
+			name = "Pods-WeatherTrendsTests";
+			path = "Target Support Files/Pods-WeatherTrendsTests";
+			sourceTree = "<group>";
+		};
+		15264EF213BB8B7C1007B4C89E3237BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA77FD6BAEFAA633E8E4B890E76C91 /* JBChartView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20BD99BEC70F3139EE011D75044250FC /* Pods-WeatherTrends */ = {
+			isa = PBXGroup;
+			children = (
+				B17CF8E8BE631B13EBD2BB69B602D1DA /* Info.plist */,
+				E3F7CF3192CE205A38933F6639B7CE04 /* Pods-WeatherTrends.modulemap */,
+				EBDD1D6495B59CC9168DC4670D6201A3 /* Pods-WeatherTrends-acknowledgements.markdown */,
+				F75F52CA03FC8665934450B09A6B58E2 /* Pods-WeatherTrends-acknowledgements.plist */,
+				995ACD2684639300DCD9E8B15EBD4A8C /* Pods-WeatherTrends-dummy.m */,
+				D1F96CC82B60A07D8BEE7F9A0FB20F5E /* Pods-WeatherTrends-frameworks.sh */,
+				A8ECA41750880E1313A296F93D695140 /* Pods-WeatherTrends-resources.sh */,
+				F327D901498FA76A241D6AEFF3970468 /* Pods-WeatherTrends-umbrella.h */,
+				730E5011C15432BAB347486B7ED8DA56 /* Pods-WeatherTrends.debug.xcconfig */,
+				062D8DD4B9F4160D77712E0E196F5A36 /* Pods-WeatherTrends.release.xcconfig */,
+			);
+			name = "Pods-WeatherTrends";
+			path = "Target Support Files/Pods-WeatherTrends";
+			sourceTree = "<group>";
+		};
+		3FFA77FD6BAEFAA633E8E4B890E76C91 /* JBChartView */ = {
+			isa = PBXGroup;
+			children = (
+				68D798E85B9CD05AA82E80D2CC9DE065 /* JBBarChartView.h */,
+				B1AFA4BD684D9BB792594C3C410AA9C1 /* JBBarChartView.m */,
+				231DD4BE21CB6338D806940785EA81F7 /* JBChartView.h */,
+				8B9210E77FE8944258651221D625EFCB /* JBChartView.m */,
+				55BFB03F390760B19D7922088F374959 /* JBGradientBarView.h */,
+				F719D0345E30621EA16E0DE1C94FB30D /* JBGradientBarView.m */,
+				97EB3DCDCA5722AA1549D2856E1A2DDB /* JBGradientLineLayer.h */,
+				D496CC202C35048A5B438032ABB25FDF /* JBGradientLineLayer.m */,
+				0813EE82590EA068D65FAC454DA9750A /* JBLineChartDotsView.h */,
+				F37AD5080E9267F71E5A4BF3C92ECC9F /* JBLineChartDotsView.m */,
+				98F4366D89599131703CF8E9086FEC7B /* JBLineChartDotView.h */,
+				823460AC770FC133E0D6D78E738FBB94 /* JBLineChartDotView.m */,
+				CF16E99F051C2D0D7D8F19461C55FB02 /* JBLineChartLine.h */,
+				03BEE126951922CEFCF2359F81E1D073 /* JBLineChartLine.m */,
+				55DE8B538B37F52432CD46D0789831D8 /* JBLineChartLinesView.h */,
+				6ED2D38175EB39B2A214A80B659894C8 /* JBLineChartLinesView.m */,
+				BB99B2CE2F51DB3EFB0329532E3AC258 /* JBLineChartPoint.h */,
+				F621E183CA3220346B357D81A0038C6A /* JBLineChartPoint.m */,
+				D0B90CAF176EA3F7B9B58679F361F8BE /* JBLineChartView.h */,
+				BCA25C2F035B23B803EDBB205A9141C9 /* JBLineChartView.m */,
+				2FF64B5C5FF5E0615F3C80854E58A782 /* JBShapeLineLayer.h */,
+				F12AC78BECF5094C13E29597912F29F7 /* JBShapeLineLayer.m */,
+				EFA2D3A6B69848AD82CC6D29C975E69D /* NSMutableArray+JBStack.h */,
+				EA6641DA239A17BC342D6B22CE7AB527 /* NSMutableArray+JBStack.m */,
+				EE5FCBDD41CB8A12CB8615F94B09717A /* Support Files */,
+			);
+			name = JBChartView;
+			path = JBChartView;
+			sourceTree = "<group>";
+		};
+		417B66ADBE66D22A06C3BC549FB19AEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2B758B0EF9C62388D876D30913FE2 /* JBChartView.framework */,
+				3C20D41F4F6BD44166F4681E7DA717F4 /* Pods_WeatherTrends.framework */,
+				AF8A170D2D94C2F40C083BEB50B58D72 /* Pods_WeatherTrendsTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		649BD056F76C004CCF972687BDABC01C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20BD99BEC70F3139EE011D75044250FC /* Pods-WeatherTrends */,
+				01791CEBC0DC3B6F0DEDDDCBD4698371 /* Pods-WeatherTrendsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				15264EF213BB8B7C1007B4C89E3237BA /* Pods */,
+				417B66ADBE66D22A06C3BC549FB19AEB /* Products */,
+				649BD056F76C004CCF972687BDABC01C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE5FCBDD41CB8A12CB8615F94B09717A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C9C7689A9F98DA160C650A709B664B8 /* Info.plist */,
+				A8F5D9192D329BABF28329189EB2C5F0 /* JBChartView.modulemap */,
+				824182A1F26E24CE7C63E0708A425D6C /* JBChartView.xcconfig */,
+				B293C6B0AD7D04DC70CCE82790A4763F /* JBChartView-dummy.m */,
+				BBC161407B1AA6B2E09D7C16EBC6547B /* JBChartView-prefix.pch */,
+				BBA555C847F77131C20DB1ADAAEE6CA1 /* JBChartView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JBChartView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17E55D650E4F86AAC20FCBCE0B86DA14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B059AE9D1BCDB673D012857263B9D4C /* JBBarChartView.h in Headers */,
+				2E38BFF8237A73E24D8EF5F168155719 /* JBChartView-umbrella.h in Headers */,
+				426A42796485A71F96D24CCF1E859DF8 /* JBChartView.h in Headers */,
+				B55C23EFBE330672CC51B262346C9A58 /* JBGradientBarView.h in Headers */,
+				93F689EB0FCCC0E426D47A629D398CB9 /* JBGradientLineLayer.h in Headers */,
+				D8C12D3990AF99FDA491BFF4CC0B42C1 /* JBLineChartDotsView.h in Headers */,
+				D969475FA12BC012A40CD8B6BC03874E /* JBLineChartDotView.h in Headers */,
+				5A2B0C434CCB0D1CD3F49DFF060D4936 /* JBLineChartLine.h in Headers */,
+				445851C633A5424160C4EE15304459C8 /* JBLineChartLinesView.h in Headers */,
+				732E83D919E45F18F1838E1D69ED471C /* JBLineChartPoint.h in Headers */,
+				E573529DC067A1DC86AC31C40744CE05 /* JBLineChartView.h in Headers */,
+				98DF62F047B5ACAA65EC3C159798A155 /* JBShapeLineLayer.h in Headers */,
+				A10E78C5CE1F3930468BD336E1F31A4C /* NSMutableArray+JBStack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF8BE7B3040CFFF5E02714ACEDEAF48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EA1846E4E2AAAE9014B909556EF63F /* Pods-WeatherTrendsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E0CCEEDCE754DFAF31B303E0AE40F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B64E300A5FB52BF23B4A2C1F4455FF /* Pods-WeatherTrends-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		087CAC16986958C5F044405C8A680FB1 /* Pods-WeatherTrendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06489692D6DFF7CE5FA29763287E5CCA /* Build configuration list for PBXNativeTarget "Pods-WeatherTrendsTests" */;
+			buildPhases = (
+				F6762C82EE1F11F5BBE1725E5A705B2E /* Sources */,
+				0D51AF864A97ADEB5C337365547FE4B5 /* Frameworks */,
+				2BF8BE7B3040CFFF5E02714ACEDEAF48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WeatherTrendsTests";
+			productName = "Pods-WeatherTrendsTests";
+			productReference = AF8A170D2D94C2F40C083BEB50B58D72 /* Pods_WeatherTrendsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		29C8CE0DA7C8E0F371FDC47F1ECB99E8 /* Pods-WeatherTrends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 227B48941E572272966EC02E4BA854C9 /* Build configuration list for PBXNativeTarget "Pods-WeatherTrends" */;
+			buildPhases = (
+				B7F610DCC5156E30B0B7080EBCC903E2 /* Sources */,
+				50FAEF5A53A8515020A1771D6BA62693 /* Frameworks */,
+				35E0CCEEDCE754DFAF31B303E0AE40F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554F56D44C989BFDCFD26FB04EB6EC1B /* PBXTargetDependency */,
+			);
+			name = "Pods-WeatherTrends";
+			productName = "Pods-WeatherTrends";
+			productReference = 3C20D41F4F6BD44166F4681E7DA717F4 /* Pods_WeatherTrends.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A4752E1A78EE7604F2EEFBC36866BB3 /* JBChartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C42CC47ADC17459377FEDD18B0527A5 /* Build configuration list for PBXNativeTarget "JBChartView" */;
+			buildPhases = (
+				4EE56650C901C54760C962EA59495146 /* Sources */,
+				3124380E2BE7D6164303D8C31CF72B53 /* Frameworks */,
+				17E55D650E4F86AAC20FCBCE0B86DA14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBChartView;
+			productName = JBChartView;
+			productReference = CFE2B758B0EF9C62388D876D30913FE2 /* JBChartView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 417B66ADBE66D22A06C3BC549FB19AEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A4752E1A78EE7604F2EEFBC36866BB3 /* JBChartView */,
+				29C8CE0DA7C8E0F371FDC47F1ECB99E8 /* Pods-WeatherTrends */,
+				087CAC16986958C5F044405C8A680FB1 /* Pods-WeatherTrendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EE56650C901C54760C962EA59495146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F96C9AB940B0632F0B8F5CCB837D6D /* JBBarChartView.m in Sources */,
+				A63CDF2F0879C1B64D5B7EFB3D8DAF92 /* JBChartView-dummy.m in Sources */,
+				78120A3601A06D8A5EDFBFD585129753 /* JBChartView.m in Sources */,
+				139DF8B9AD013E4DE9C795B72D6B215A /* JBGradientBarView.m in Sources */,
+				89456D1FFDB323E816213F9A5CF4089D /* JBGradientLineLayer.m in Sources */,
+				299881057FB2CA560B3112BA2557FA3D /* JBLineChartDotsView.m in Sources */,
+				6A86D83775F51E702C21210516163C74 /* JBLineChartDotView.m in Sources */,
+				2157E68D351AE5CA57E69C9A46B0B088 /* JBLineChartLine.m in Sources */,
+				C5A6F1F3F0C84AE88F9F96AD83F0062C /* JBLineChartLinesView.m in Sources */,
+				CCA6BFF987DEE0C71CA6FFF87E82622C /* JBLineChartPoint.m in Sources */,
+				74CFE7B7EAC9CE681E9AD6116FA9BE65 /* JBLineChartView.m in Sources */,
+				38CA890E59175CCB854195F625542345 /* JBShapeLineLayer.m in Sources */,
+				9F0779951A822EA5DF0E31817411D9F1 /* NSMutableArray+JBStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F610DCC5156E30B0B7080EBCC903E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70604C26EAE06BC8D62E86764129F85E /* Pods-WeatherTrends-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6762C82EE1F11F5BBE1725E5A705B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991C4F2114B16DBDFF044E421EB150A3 /* Pods-WeatherTrendsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554F56D44C989BFDCFD26FB04EB6EC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JBChartView;
+			target = 7A4752E1A78EE7604F2EEFBC36866BB3 /* JBChartView */;
+			targetProxy = D454104E1AD487E5BCC765FF101EE0F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00B811956092D2F56F656B2AA73AFCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824182A1F26E24CE7C63E0708A425D6C /* JBChartView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JBChartView/JBChartView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBChartView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JBChartView/JBChartView.modulemap";
+				PRODUCT_NAME = JBChartView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D23278938ADF334174C5BF2A4B6B1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4DDCF2CA895DFDBED2CC1DD13EBE9EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062D8DD4B9F4160D77712E0E196F5A36 /* Pods-WeatherTrends.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherTrends/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherTrends/Pods-WeatherTrends.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherTrends;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F039A93D1B264F7DE57B682ED1FD32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A25D6E7F379A3C9219F9E34F6B01B22 /* Pods-WeatherTrendsTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherTrendsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherTrendsTests/Pods-WeatherTrendsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherTrendsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		958D91D17105EB98A7426F1BDE36A2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE205CDC8A9FD327FF95CC9F25DB29A /* Pods-WeatherTrendsTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherTrendsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherTrendsTests/Pods-WeatherTrendsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherTrendsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		963F24DCE5104D55129CEFCDCA66F0F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730E5011C15432BAB347486B7ED8DA56 /* Pods-WeatherTrends.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherTrends/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherTrends/Pods-WeatherTrends.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeatherTrends;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FBDBCAA44D95CD60D2A1E0E5DB2B905B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824182A1F26E24CE7C63E0708A425D6C /* JBChartView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JBChartView/JBChartView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBChartView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JBChartView/JBChartView.modulemap";
+				PRODUCT_NAME = JBChartView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06489692D6DFF7CE5FA29763287E5CCA /* Build configuration list for PBXNativeTarget "Pods-WeatherTrendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F039A93D1B264F7DE57B682ED1FD32F /* Debug */,
+				958D91D17105EB98A7426F1BDE36A2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		227B48941E572272966EC02E4BA854C9 /* Build configuration list for PBXNativeTarget "Pods-WeatherTrends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963F24DCE5104D55129CEFCDCA66F0F0 /* Debug */,
+				4DDCF2CA895DFDBED2CC1DD13EBE9EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C3A53DEAA96B47E756185345E180D /* Debug */,
+				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C42CC47ADC17459377FEDD18B0527A5 /* Build configuration list for PBXNativeTarget "JBChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B811956092D2F56F656B2AA73AFCDE /* Debug */,
+				FBDBCAA44D95CD60D2A1E0E5DB2B905B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

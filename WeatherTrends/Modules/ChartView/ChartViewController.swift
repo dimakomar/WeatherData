@@ -75,7 +75,8 @@ private extension ChartViewController{
     
     func loadValues(values: [MonthWithProperties]) {
         var valuesArray = [CGFloat]()
-        switch chartType! {
+        guard let chartType = chartType else { return }
+        switch chartType {
         case .tMax:
             valuesArray = values.map() { $0.tMax.value }
             headerLabel.text = ChartView.maxTemperatureText
@@ -124,7 +125,8 @@ extension ChartViewController: JBBarChartViewDelegate {
     
     func barChartView(_ barChartView: JBBarChartView!, colorForBarViewAt index: UInt) -> UIColor! {
         var isEstimated = false
-        switch chartType! {
+        guard let chartType = chartType else { return ChartView.mainColor }
+        switch chartType {
         case .tMax:
             isEstimated = monthsList[Int(index)].tMax.isEstimated
         default:

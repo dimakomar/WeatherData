@@ -42,7 +42,7 @@ extension ChartListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ChartListCell.reuseId, for: indexPath) as! ChartListTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChartListCell.reuseId, for: indexPath) as? ChartListTableViewCell else { return UITableViewCell() }
         if cell.contentViewController == nil {
             cell.addViewController(toParentViewController: self, values: monthsList, chartType: categiries[indexPath.row])
         }
